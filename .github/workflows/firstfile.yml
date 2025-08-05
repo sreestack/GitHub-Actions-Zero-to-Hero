@@ -28,5 +28,25 @@ jobs:
         run : |
            cd src
            python -m pytest addition.py
+    
+  Install-apache:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4 # Action to check out the repository code
+
+        - name: Update apt package index
+          run: sudo apt update -y # Update the package list
+
+        - name: Install Apache2
+          run: sudo apt install apache2 -y # Install the Apache2 package
+
+        - name: Check Apache2 service status
+          run: sudo systemctl status apache2 # Verify Apache is running
+
+    
+
+
+
 
 
