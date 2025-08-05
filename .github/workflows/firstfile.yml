@@ -20,3 +20,7 @@ jobs:
           echo "It can contain multiple commands."
       - name: Upload one more line script
         run: echo "This is another one-line script."
+      - name: Run a script with fouthe file
+        run: |
+          echo "This is a script with fouthe file."
+          echo "It can also contain multiple commands."
