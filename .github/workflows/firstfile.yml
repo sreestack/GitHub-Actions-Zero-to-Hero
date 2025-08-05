@@ -18,3 +18,5 @@ jobs:
         run: |
           echo "This is a multi-line script."
           echo "It can contain multiple commands."
+      - name: Upload one more line script
+        run: echo "This is another one-line script."
